@@ -1,0 +1,162 @@
+<!doctype html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>イベント情報 | 大丸開発</title>
+  <meta name="description" content="大丸開発の完成見学会・イベント情報一覧です。" />
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='88'>🏠</text></svg>" />
+  <style>
+    :root{
+      --accent:#e8380d;
+      --ink:#121212;
+      --bg:#f6f7f9;
+      --card:#ffffff;
+      --muted:#6b7280;
+    }
+    *{box-sizing:border-box;margin:0;padding:0}
+    body{
+      font-family:-apple-system,BlinkMacSystemFont,"Helvetica Neue","游ゴシック","Yu Gothic",YuGothic,"ヒラギノ角ゴ Pro","Hiragino Kaku Gothic Pro",Meiryo,sans-serif;
+      color:var(--ink);background:var(--bg);line-height:1.8;-webkit-font-smoothing:antialiased;
+    }
+    .wrap{max-width:1080px;margin:0 auto;padding:0 20px}
+
+    header.nav{position:sticky;top:0;z-index:50;background:rgba(255,255,255,.92);backdrop-filter:blur(8px);
+      border-bottom:1px solid #eaecef}
+    .nav .wrap{display:flex;align-items:center;justify-content:space-between;height:64px}
+    .brand{font-weight:800;font-size:1.15rem;letter-spacing:.02em}
+    .brand b{color:var(--accent)}
+    .nav nav a{margin-left:22px;text-decoration:none;color:var(--ink);font-size:.92rem;font-weight:600}
+    .nav nav a:hover{color:var(--accent)}
+    @media(max-width:640px){.nav nav{display:none}}
+
+    .page-hero{background:var(--ink);color:#fff;padding:60px 20px 50px;text-align:center}
+    .page-hero span{color:var(--accent);font-weight:800;letter-spacing:.12em;font-size:.82rem}
+    .page-hero h1{font-size:clamp(1.6rem,4vw,2.4rem);font-weight:800;margin-top:8px}
+
+    .breadcrumb{padding:14px 0;font-size:.85rem;color:var(--muted)}
+    .breadcrumb a{color:var(--muted);text-decoration:none}
+    .breadcrumb a:hover{color:var(--accent)}
+    .breadcrumb span{margin:0 6px}
+
+    .event-list{padding:48px 0 80px}
+    .event-item{background:var(--card);border-radius:16px;box-shadow:0 6px 20px rgba(0,0,0,.07);
+      margin-bottom:24px;overflow:hidden;display:grid;grid-template-columns:280px 1fr;
+      transition:transform .18s,box-shadow .18s}
+    .event-item:hover{transform:translateY(-4px);box-shadow:0 16px 36px rgba(0,0,0,.13)}
+    @media(max-width:720px){.event-item{grid-template-columns:1fr}}
+    .event-item img{width:100%;height:200px;object-fit:cover;display:block;
+      background:linear-gradient(135deg,#e9edf2,#cdd5de)}
+    @media(max-width:720px){.event-item img{height:180px}}
+    .event-body{padding:28px 32px;display:flex;flex-direction:column;justify-content:center}
+    .event-date{display:inline-block;background:#fdecea;color:var(--accent);
+      font-size:.8rem;font-weight:700;padding:4px 14px;border-radius:999px;margin-bottom:12px}
+    .event-title{font-size:1.3rem;font-weight:800;margin-bottom:10px}
+    .event-meta{color:var(--muted);font-size:.9rem;line-height:2}
+    .event-meta dt{font-weight:700;color:var(--ink);display:inline}
+    .event-note{margin-top:16px;padding:12px 16px;background:#f6f7f9;border-radius:8px;
+      font-size:.88rem;color:var(--muted)}
+    .btn-reserve{display:inline-block;margin-top:20px;background:var(--accent);color:#fff;
+      text-decoration:none;font-weight:700;padding:11px 28px;border-radius:8px;
+      font-size:.92rem;transition:transform .15s,box-shadow .15s;
+      box-shadow:0 6px 20px rgba(232,56,13,.35)}
+    .btn-reserve:hover{transform:translateY(-2px);box-shadow:0 10px 28px rgba(232,56,13,.5)}
+
+    .section-label{font-weight:800;color:var(--muted);letter-spacing:.1em;font-size:.8rem;
+      text-transform:uppercase;margin-bottom:20px;padding-bottom:10px;
+      border-bottom:2px solid #eaecef}
+
+    .back-btn{text-align:center;padding:0 0 60px}
+    .back-btn a{display:inline-block;text-decoration:none;color:var(--ink);font-weight:600;
+      font-size:.92rem;padding:12px 28px;border:2px solid #d1d5db;border-radius:8px;
+      transition:border-color .15s,color .15s}
+    .back-btn a:hover{border-color:var(--accent);color:var(--accent)}
+
+    footer{background:#0c0c0c;color:#8b8f96;text-align:center;padding:32px 20px;font-size:.85rem}
+  </style>
+</head>
+<body>
+
+  <header class="nav">
+    <div class="wrap">
+      <div class="brand"><a href="index.html" style="text-decoration:none;color:inherit"><b>大丸開発</b></a></div>
+      <nav>
+        <a href="index.html#works">分譲・物件</a>
+        <a href="event.html" style="color:var(--accent)">イベント</a>
+        <a href="index.html#column">コラム</a>
+        <a href="index.html#contact">お問い合わせ</a>
+      </nav>
+    </div>
+  </header>
+
+  <div class="page-hero">
+    <span>EVENT</span>
+    <h1>完成見学会・イベント情報</h1>
+  </div>
+
+  <div class="wrap">
+    <div class="breadcrumb">
+      <a href="index.html">ホーム</a><span>›</span>イベント情報
+    </div>
+  </div>
+
+  <section class="event-list">
+    <div class="wrap">
+
+      <div class="section-label">開催予定のイベント</div>
+
+      <div class="event-item">
+        <img src="https://daimaru-d.github.io/pages-demo-assets/images/event.jpg" alt="一宮市西五城4 完成見学会">
+        <div class="event-body">
+          <div class="event-date">6/6（土）・6/7（日）</div>
+          <div class="event-title">一宮市西五城4 完成見学会</div>
+          <dl class="event-meta">
+            <dt>時間：</dt><dd>10:00 〜 17:00</dd><br>
+            <dt>場所：</dt><dd>愛知県一宮市西五城4丁目（詳細は予約後にご案内）</dd><br>
+            <dt>形式：</dt><dd>完全予約制（当日参加不可）</dd>
+          </dl>
+          <div class="event-note">お子様連れ歓迎。駐車場あり。ご予約はメールにてお気軽にどうぞ。</div>
+          <a class="btn-reserve" href="index.html#contact">見学を予約する</a>
+        </div>
+      </div>
+
+      <div class="event-item">
+        <img src="https://daimaru-d.github.io/pages-demo-assets/images/house2.jpg" alt="岐阜市茜部菱野 完成見学会">
+        <div class="event-body">
+          <div class="event-date">5/30（金）・5/31（土）</div>
+          <div class="event-title">岐阜市茜部菱野 完成見学会</div>
+          <dl class="event-meta">
+            <dt>時間：</dt><dd>10:00 〜 17:00</dd><br>
+            <dt>場所：</dt><dd>岐阜県岐阜市茜部菱野（詳細は予約後にご案内）</dd><br>
+            <dt>形式：</dt><dd>完全予約制</dd>
+          </dl>
+          <div class="event-note">4LDK・延床面積約35坪。収納充実のファミリー向けプランです。</div>
+          <a class="btn-reserve" href="index.html#contact">見学を予約する</a>
+        </div>
+      </div>
+
+      <div class="event-item">
+        <img src="https://daimaru-d.github.io/pages-demo-assets/images/house3.jpg" alt="岐阜市中鶉 完成見学会">
+        <div class="event-body">
+          <div class="event-date">5/23（金）・5/24（土）</div>
+          <div class="event-title">岐阜市中鶉 完成見学会</div>
+          <dl class="event-meta">
+            <dt>時間：</dt><dd>10:00 〜 17:00</dd><br>
+            <dt>場所：</dt><dd>岐阜県岐阜市中鶉（詳細は予約後にご案内）</dd><br>
+            <dt>形式：</dt><dd>完全予約制</dd>
+          </dl>
+          <div class="event-note">平屋感覚で使える開放的なLDK。生活動線にこだわったモデルです。</div>
+          <a class="btn-reserve" href="index.html#contact">見学を予約する</a>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <div class="back-btn">
+    <a href="index.html">← トップページへ戻る</a>
+  </div>
+
+  <footer>© 大丸開発 — ハンズオンで作った GitHub Pages サイト</footer>
+</body>
+</html>
